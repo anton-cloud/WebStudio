@@ -1,0 +1,19 @@
+.logo {
+  display: block;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+
+      &__accent {
+          color: $accent-colour;
+      }
+
+      &--colour--black {
+        color: $logo-text-colour;
+      }
+
+      &--colour--white {
+          color: $header-bg-colour;
+      }
+}

@@ -1,0 +1,35 @@
+
+.social-links--align-center {
+  align-items: center;
+  justify-content: start;
+}
+
+.social-links__cirle {
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--bg--dark {
+  background-color: $footer-circle-colour;
+}
+}
+
+.social-links__icon--colour--white {
+  fill: $header-bg-colour;
+}
+
+.social-links__link--locate--footer {
+  border-radius: 50%;
+
+  transition: background-color $transition-duration
+    $transition-timing-function;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-colour;
+    }
+}

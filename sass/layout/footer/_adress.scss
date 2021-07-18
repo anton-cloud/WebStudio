@@ -1,0 +1,10 @@
+.adress {
+  line-height: 1.7;
+  font-style: normal;
+
+    &__text {
+      margin: 0 0 9px 0;
+      color: $header-bg-colour;
+    }
+
+}

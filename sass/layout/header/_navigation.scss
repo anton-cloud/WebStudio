@@ -1,0 +1,45 @@
+.nav {
+  display: flex;
+
+    &__item{
+      
+      &:not(:last-child) {
+          margin-right: 50px;
+      }
+    }
+
+    &__link {
+      position: relative;
+
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+
+      text-decoration: none;
+      color: inherit;
+
+      transition: color $transition-duration $transition-timing-function;
+
+      &:hover,
+      &:focus {
+      color: $accent-colour;
+      }
+    }
+}
+
+.nav__link--current {
+  color: $accent-colour;
+
+  &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+
+      display: block;
+
+      background-color: #2196f3;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+  }
+}

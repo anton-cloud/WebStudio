@@ -1,0 +1,54 @@
+.input {
+
+        &__label {
+      display: block;
+      margin-bottom: 4px;
+
+      font-size: 12px;
+      letter-spacing: 0.01em;
+      color: #757575;
+      }
+
+      &__place {
+        display: block;
+        height: 40px;
+        width: 100%;
+        padding-left: 32px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+
+        &:focus,
+        &:focus-visible {
+          border: 1px solid $accent-colour;
+          outline: none;
+        }
+      }
+
+      &__box {
+        position: relative;
+
+        margin-bottom: 10px;
+      }
+
+      &__icon {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+
+        transform: translateY(-50%);
+
+        transition: fill $transition-duration $transition-timing-function;
+
+        .input__place:focus + & {
+            fill: $accent-colour;
+        }
+      }
+}
+
+
+
+
+

@@ -1,0 +1,25 @@
+.header {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border: 1px solid #ececec;
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__logo {
+      display: block;
+      margin-right: 93px;
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
+
+    &__contact {
+      display: flex;
+      margin-left: auto;
+    }
+}
+
+

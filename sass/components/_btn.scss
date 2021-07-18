@@ -1,0 +1,31 @@
+.btn {
+  display: block;
+  height: 50px;
+
+  font-weight: 700;
+  line-height: 1.9;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color $transition-duration
+    $transition-timing-function;
+
+        &:hover,
+        &:focus {
+            background-color: #188ce8;
+        }
+
+        &--bg--blue {
+            background-color: $accent-colour; 
+        }
+        
+        &--colour--white {
+            color: $header-bg-colour;
+        }
+        
+}

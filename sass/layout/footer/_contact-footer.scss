@@ -1,0 +1,18 @@
+
+.contact__item--locate--footer {
+  margin-bottom: 9px;
+}
+
+.contact__link--colour--white{
+  color: $footer-contact-colour;
+  line-height: 1.7;
+}
+
+.contact__link--colour--white {
+  transition: color $transition-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+      color: $accent-colour;
+  }
+}

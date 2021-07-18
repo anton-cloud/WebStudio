@@ -1,0 +1,54 @@
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleX(0.8);
+} 
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleX(1);
+  transition: transform $transition-duration
+    $transition-timing-function;
+
+  min-width: 528px;
+  min-height: 581px;
+  padding: 40px;
+
+  background-color: $header-bg-colour;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+      &__btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 8px;
+        margin-right: 8px;
+        padding: 6px;
+        border-radius: 50%;
+
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: $header-bg-colour;
+      }
+
+      &__text {
+      margin-bottom: 12px;
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.15;
+      text-align: center;
+      color: #212121;
+      }
+}
+
+.form__checkbox {
+  margin-bottom: 30px;
+}
