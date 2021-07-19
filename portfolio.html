@@ -25,7 +25,7 @@
   <body>
     <!-------------------------- HEADER --------------------------------- -->
 
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
         <a
           href="./index.html"
@@ -69,7 +69,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <!-------------------------------- SECTION EXAMPLES------------------ -->
 
     <main>
@@ -138,8 +138,7 @@
                   <img
                     src="./images/portfolio-1.jpg"
                     alt=""
-                    width="370"
-                    height="294"
+                    class="card__img"
                   />
                 </div>
                 <div class="card__text-box">
@@ -163,8 +162,7 @@
                   <img
                     src="./images/portfolio-2.jpg"
                     alt=""
-                    width="370"
-                    height="294"
+                    class="card__img"
                   />
                 </div>
                 <div class="card__text-box">
@@ -188,8 +186,7 @@
                   <img
                     src="./images/portfolio-3.jpg"
                     alt=""
-                    width="370"
-                    height="294"
+                    class="card__img"
                   />
                 </div>
                 <div class="card__text-box">
@@ -213,8 +210,7 @@
                   <img
                     src="./images/portfolio-4.jpg"
                     alt=""
-                    width="370"
-                    height="294"
+                    class="card__img"
                   />
                 </div>
                 <div class="card__text-box">
@@ -238,8 +234,7 @@
                   <img
                     src="./images/portfolio-5.jpg"
                     alt=""
-                    width="370"
-                    height="294"
+                    class="card__img"
                   />
                 </div>
                 <div class="card__text-box">
@@ -263,8 +258,7 @@
                   <img
                     src="./images/portfolio-6.jpg"
                     alt=""
-                    width="370"
-                    height="294"
+                    class="card__img"
                   />
                 </div>
                 <div class="card__text-box">
@@ -288,8 +282,7 @@
                   <img
                     src="./images/portfolio-7.jpg"
                     alt=""
-                    width="370"
-                    height="294"
+                    class="card__img"
                   />
                 </div>
                 <div class="card__text-box">
@@ -313,8 +306,7 @@
                   <img
                     src="./images/portfolio-8.jpg"
                     alt=""
-                    width="370"
-                    height="294"
+                    class="card__img"
                   />
                 </div>
                 <div class="card__text-box">
@@ -338,8 +330,7 @@
                   <img
                     src="./images/portfolio-9.jpg"
                     alt=""
-                    width="370"
-                    height="294"
+                    class="card__img"
                   />
                 </div>
                 <div class="card__text-box">
@@ -357,104 +348,118 @@
     <footer class="footer footer__container">
       <div class="container">
         <div class="footer__box">
-          <div class="footer__box--locate--left">
-            <a
-              href="./index.html"
-              class="link logo footer__logo logo--colour--white"
-            >
-              <span class="logo__accent">Web</span>Studio</a
-            >
+          <div class="footer__box--contain--two">
+            <div class="footer__box--locate--left">
+              <a
+                href="./index.html"
+                class="link logo footer__logo logo--colour--white"
+              >
+                <span class="logo__accent">Web</span>Studio</a
+              >
 
-            <address class="adress address--colour--white">
-              <p class="adress__text">г. Киев, пр-т Леси Украинки, 26</p>
-            </address>
+              <address class="adress">
+                <p class="adress__text">г. Киев, пр-т Леси Украинки, 26</p>
+              </address>
 
-            <ul class="contact">
-              <li class="contact__item--locate--footer">
-                <a
-                  href="mailtoinfo@devstudio.com"
-                  class="link contact__link--colour--white"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a
-                  href="tel:+380961111111"
-                  class="link contact__link--colour--white"
-                  >+38 096 111 11 11
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer__box--locate--right">
-            <p class="footer__text footer__text--colour--white">
-              Присоединяйтесь
-            </p>
-            <ul>
-              <ul class="social-links social-links--align-center">
-                <li class="social-links__cirle social-links__cirle--bg--dark">
+              <ul class="contact">
+                <li class="contact__item--locate--footer">
                   <a
-                    href=""
-                    class="link-for-pointer social-links__link--locate--footer"
-                    aria-label="Инстаграмм"
+                    href="mailtoinfo@devstudio.com"
+                    class="link contact__link--colour--white"
+                    >info@devstudio.com</a
                   >
-                    <svg
-                      width="20"
-                      height="20"
-                      class="social-links__icon--colour--white"
-                    >
-                      <use href="./images/sprite.svg#icon-instagram-2"></use>
-                    </svg>
-                  </a>
                 </li>
-                <li class="social-links__cirle social-links__cirle--bg--dark">
+                <li>
                   <a
-                    href=""
-                    class="link-for-pointer social-links__link--locate--footer"
-                    aria-label="Твиттер"
-                  >
-                    <svg
-                      width="20"
-                      height="20"
-                      class="social-links__icon--colour--white"
-                    >
-                      <use href="./images/sprite.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links__cirle social-links__cirle--bg--dark">
-                  <a
-                    href=""
-                    class="link-for-pointer social-links__link--locate--footer"
-                    aria-label="Фейсбук"
-                  >
-                    <svg
-                      width="20"
-                      height="20"
-                      class="social-links__icon--colour--white"
-                    >
-                      <use href="./images/sprite.svg#icon-facebook-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links__cirle social-links__cirle--bg--dark">
-                  <a
-                    href=""
-                    class="link-for-pointer social-links__link--locate--footer"
-                    aria-label="Линкедин"
-                  >
-                    <svg
-                      width="20"
-                      height="20"
-                      class="social-links__icon--colour--white"
-                    >
-                      <use href="./images/sprite.svg#icon-linkedin"></use>
-                    </svg>
+                    href="tel:+380961111111"
+                    class="link contact__link--colour--white"
+                    >+38 096 111 11 11
                   </a>
                 </li>
               </ul>
-            </ul>
+            </div>
+
+            <div class="footer__box--locate--right">
+              <p class="footer__text footer__text--colour--white">
+                Присоединяйтесь
+              </p>
+              <ul>
+                <ul class="social-links social-links--align-center">
+                  <li class="social-links__cirle social-links__cirle--bg--dark">
+                    <a
+                      href=""
+                      class="
+                        link-for-pointer
+                        social-links__link--locate--footer
+                      "
+                      aria-label="Инстаграмм"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="social-links__icon--colour--white"
+                      >
+                        <use href="./images/sprite.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-links__cirle social-links__cirle--bg--dark">
+                    <a
+                      href=""
+                      class="
+                        link-for-pointer
+                        social-links__link--locate--footer
+                      "
+                      aria-label="Твиттер"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="social-links__icon--colour--white"
+                      >
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-links__cirle social-links__cirle--bg--dark">
+                    <a
+                      href=""
+                      class="
+                        link-for-pointer
+                        social-links__link--locate--footer
+                      "
+                      aria-label="Фейсбук"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="social-links__icon--colour--white"
+                      >
+                        <use href="./images/sprite.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-links__cirle social-links__cirle--bg--dark">
+                    <a
+                      href=""
+                      class="
+                        link-for-pointer
+                        social-links__link--locate--footer
+                      "
+                      aria-label="Линкедин"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="social-links__icon--colour--white"
+                      >
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </ul>
+            </div>
           </div>
 
           <div class="footer__email email-box">

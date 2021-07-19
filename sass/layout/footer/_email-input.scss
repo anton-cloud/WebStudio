@@ -1,13 +1,23 @@
 .email-form {
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   display: flex;
-  justify-content: center;
-  align-items: center;
 
   &__input {
+    @media screen and (max-width: 1200px) {
+      min-width: 450px;
+    }
+
     min-width: 358px;
     min-height: 50px;
     margin-right: 12px;
     padding-left: 10px;
+    margin-bottom: 20px;
 
     background-color: $footer-bg-colour;
     border: 1px solid rgba(255, 255, 255, 0.3);
