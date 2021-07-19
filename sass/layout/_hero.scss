@@ -1,47 +1,155 @@
+// .hero {
+//   // min-height: 600px;
+//   // max-width: 1600px;
+
+//   &__container {
+//     padding-top: 118px;
+//     padding-bottom: 118px;
+//     max-width: 480px;
+//     min-height: 400px;
+
+//     margin-left: auto;
+//     margin-right: auto;
+
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+
+//     text-align: center;
+
+//     background-image: linear-gradient(
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)
+//       ),
+//       url("../../images/mobile/Header img.jpg");
+//     @media screen and (min-width: 768px) {
+//       background-image: linear-gradient(
+//           rgba(47, 48, 58, 0.4),
+//           rgba(47, 48, 58, 0.4)
+//         ),
+//         url("../../images/tablet/Header\ img-min.jpg");
+//       max-width: 768px;
+//     }
+//     @media screen and (min-width: 1200px) {
+//       padding-top: 200px;
+//       padding-bottom: 200px;
+//       background-image: linear-gradient(
+//           rgba(47, 48, 58, 0.4),
+//           rgba(47, 48, 58, 0.4)
+//         ),
+//         url("../../images/desktop/hero-min.jpg");
+//       max-width: 1200px;
+//     }
+//   }
+
+//   &__title {
+//     // max-width: 696px;
+//     margin: 0 auto 30px;
+
+//     font-weight: 900;
+//     font-size: 26px;
+//     line-height: 1.6px;
+
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     max-width: 360px;
+
+//     @media screen and (min-width: 1200px) {
+//       font-size: 44px;
+//       line-height: 1.4;
+//       text-align: center;
+//     }
+
+//     &__btn {
+//       margin: 0 auto;
+//       padding-left: 32px;
+//       padding-right: 32px;
+//       padding-bottom: 10px;
+//       padding-top: 10px;
+//     }
+//   }
+
+//   .hero__title--colour--white {
+//     color: $header-bg-colour;
+//   }
+// }
 
 .hero {
-  min-height: 600px;
-  max-width: 1600px;
+  text-align: center;
+  min-height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    &__container {
-      padding-top: 200px;
-      padding-bottom: 200px;
-      margin-left: auto;
-      margin-right: auto;
+  &__btn {
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
 
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/hero.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-
-      text-align: center;
-    }
-
-    &__title {
-      max-width: 696px;
-      margin: 0 auto 30px;
-
-      font-weight: 900;
-      font-size: 44px;
-      line-height: 1.4;
-      text-align: center;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-
-    &__btn{
-      margin: 0 auto;
-      padding-left: 32px;
-      padding-right: 32px;
-      padding-bottom: 10px;
-      padding-top: 10px;
-    }
+.hero__title {
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .hero__title--colour--white {
   color: $header-bg-colour;
+}
+
+// Mobile
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/mobile/Header img.jpg");
+    max-width: 480px;
+  }
+
+  .hero__title {
+    max-width: 360px;
+  }
+}
+
+// Tablet
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/desktop/hero-min.jpg");
+  }
+}
+
+//Desktop
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    min-height: 600px;
+    max-width: 1600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/desktop/hero-min.jpg");
+  }
+
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }

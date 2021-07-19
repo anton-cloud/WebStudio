@@ -1,53 +1,49 @@
-
 .examples {
+  &__container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
-    &__container {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
-
-    &__btn-list {
-      margin-bottom: 50px;
-    }
+  &__btn-list {
+    margin-bottom: 50px;
+  }
 }
 
 .btn-list {
   display: flex;
   justify-content: center;
 
-    &__item {
-
-      &:not(:last-child)  {
-          margin-right: 8px;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 8px;
     }
-      }
+  }
 }
 
 .examples__btn {
   height: 38px;
   padding: 6px 22px;
 
-    background-color: $secondary-bg-colour;
+  background-color: $secondary-bg-colour;
   color: inherit;
   font-weight: 500;
   line-height: 1.625;
 
-   transition: color $transition-duration $transition-timing-function,
-    background-color $transition-duration
-      $transition-timing-function,
+  transition: color $transition-duration $transition-timing-function,
+    background-color $transition-duration $transition-timing-function,
     box-shadow $transition-duration $transition-timing-function;
 
-    &:hover,
-    &:focus {
-      color: $header-bg-colour;
-      background-color: $accent-colour;
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-    }
+  &:hover,
+  &:focus {
+    color: $header-bg-colour;
+    background-color: $accent-colour;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .examples__btn--colour--gray {
-    background-color: $secondary-bg-colour;
+  background-color: $secondary-bg-colour;
 }
 
 .examples-list {
@@ -59,10 +55,10 @@
   margin-bottom: 30px;
 
   &:not(:nth-child(3n + 1)) {
-      margin-left: 30px;
+    margin-left: 30px;
   }
 
   &:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+    margin-bottom: 0;
   }
 }

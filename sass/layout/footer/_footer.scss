@@ -1,46 +1,45 @@
 .footer {
   background-color: $footer-bg-colour;
 
-      &__container {
-        padding-top: 60px;
-        padding-bottom: 60px;
-      }
+  &__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
+  &__logo {
+    margin-bottom: 20px;
+  }
 
-      &__logo {
-        margin-bottom: 20px;
-      }
+  &__box {
+    display: flex;
+  }
 
-      &__box {
-        display: flex;
-      }
+  &__text {
+    margin-bottom: 20px;
 
-      &__text {
-        margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
 
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        text-transform: uppercase;
-      }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-      &__btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        padding-left: 29px;
-        padding-right: 28px;
-        padding-top: 12px;
-        padding-bottom: 12px;
+    padding-left: 29px;
+    padding-right: 28px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 
-        letter-spacing: 0.06em;
+    letter-spacing: 0.06em;
 
-        &:hover,
-        &:focus {
-            background-color: #188ce8;
-        }
-      }
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
 }
 
 .footer__email {
@@ -58,11 +57,11 @@
 }
 
 .footer__text--colour--white {
-    color: $header-bg-colour;
+  color: $header-bg-colour;
 }
 
 .btn__icon {
-margin-left: 10px;  
+  margin-left: 10px;
 
-fill: $header-bg-colour;
+  fill: $header-bg-colour;
 }

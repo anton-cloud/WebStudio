@@ -1,37 +1,29 @@
-
 .contact {
-
-    &__item {
-      
-      &:not(:last-child) {
-          margin-right: 30px;
-      }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
     }
+  }
 
-    &__link {
-      display: block;
-      padding-top: 32px;
-      padding-bottom: 32px;
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-      color: $secondary-text-colour;
-      display: flex;
-      align-items: center;
+    color: $secondary-text-colour;
+    display: flex;
+    align-items: center;
 
-      transition: color $transition-duration $transition-timing-function;
+    transition: color $transition-duration $transition-timing-function;
 
-      &:hover,
-      &:focus {
-          color: $accent-colour;
-      }
+    &:hover,
+    &:focus {
+      color: $accent-colour;
     }
+  }
 
-    &__icon {
-      margin-right: 10px;
-      fill: currentColor;
-    }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
-
-
-
-
-

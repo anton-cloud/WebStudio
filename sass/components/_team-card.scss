@@ -3,29 +3,30 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-      &__box {
-        padding-left: 32px;
-        padding-right: 32px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        text-align: center;
+  &__box {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
 
-        background-color: $header-bg-colour;
-      }
+    background-color: $header-bg-colour;
+  }
 
-      &__title {
-        margin-bottom: 10px;
+  &__title {
+    margin-bottom: 10px;
 
-        font-weight: 500;
-        font-size: 16px;
-      }
+    font-weight: 500;
+    font-size: 16px;
+  }
 
-      &__text {
-        color: var(--secondary-text-colour);
-        font-size: 16px;
-        margin-bottom: 16px;
-      }
+  &__text {
+    color: var(--secondary-text-colour);
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
 }
 
-
-
+.person-card__img {
+  width: 100%;
+}

@@ -1,87 +1,43 @@
 .comments {
-
-      &__label {
+  &__label {
     display: block;
     margin-bottom: 4px;
 
     font-size: 12px;
     letter-spacing: 0.01em;
     color: #757575;
-      }
-
-      &__box {
-      margin-bottom: 20px;
-      }
-
-      &__input-place {
-          display: block;
-      width: 100%;
-      min-height: 120px;
-
-      padding-top: 12px;
-      padding-bottom: 12px;
-      padding-left: 16px;
-      padding-right: 16px;
-
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      border-radius: 4px;
-      resize: none;
-
-      &::placeholder {
-        font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
-
-    color: rgba(117, 117, 117, 0.5);
-      }
-
-      &:focus,
-      &:focus-visible {
-      border: 1px solid $accent-colour;
-      outline: none;
-      }
-    }
   }
 
+  &__box {
+    margin-bottom: 20px;
+  }
 
-// .comments__label {
-// display: block;
-// margin-bottom: 4px;
+  &__input-place {
+    display: block;
+    width: 100%;
+    min-height: 120px;
 
-// font-size: 12px;
-// letter-spacing: 0.01em;
-// color: #757575;
-// } 
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
 
-// .comments__box { 
-// margin-bottom: 20px;
-// }
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
 
-// .comments__input-place {
-//   display: block;
-//   width: 100%;
-//   min-height: 120px;
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.2;
+      letter-spacing: 0.01em;
 
-//   padding-top: 12px;
-//   padding-bottom: 12px;
-//   padding-left: 16px;
-//   padding-right: 16px;
+      color: rgba(117, 117, 117, 0.5);
+    }
 
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-//   border-radius: 4px;
-//   resize: none;
-
-//   &::placeholder {
-//     font-size: 12px;
-// line-height: 1.2;
-// letter-spacing: 0.01em;
-
-// color: rgba(117, 117, 117, 0.5);
-//   }
-
-//   &:focus,
-//   &:focus-visible {
-//   border: 1px solid $accent-colour;
-//   outline: none;
-//   }
-// }
+    &:focus,
+    &:focus-visible {
+      border: 1px solid $accent-colour;
+      outline: none;
+    }
+  }
+}

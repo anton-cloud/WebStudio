@@ -1,9 +1,8 @@
-
 .contact__item--locate--footer {
   margin-bottom: 9px;
 }
 
-.contact__link--colour--white{
+.contact__link--colour--white {
   color: $footer-contact-colour;
   line-height: 1.7;
 }
@@ -13,6 +12,6 @@
 
   &:hover,
   &:focus {
-      color: $accent-colour;
+    color: $accent-colour;
   }
 }

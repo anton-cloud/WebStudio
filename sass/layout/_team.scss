@@ -1,19 +1,18 @@
 .team {
+  &__container {
+    padding-top: 94px;
+    padding-bottom: 94px;
 
-    &__container {
-      padding-top: 94px;
-      padding-bottom: 94px;
+    background-color: $secondary-bg-colour;
+  }
 
-      background-color: $secondary-bg-colour;
-    }
+  &__title {
+    margin-bottom: 50px;
+  }
 
-    &__title {
-      margin-bottom: 50px;
-    }
-
-    &__item:not(:last-child) {
-      margin-right: 30px;
-    }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team-list {
