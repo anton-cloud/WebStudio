@@ -1,23 +1,91 @@
 .header {
-  font-weight: 500;
-  letter-spacing: 0.02em;
   border: 1px solid #ececec;
 
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  @media screen and (max-width: 767px) {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__logo {
+      display: block;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    &__contact {
+      display: none;
+    }
+
+    &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      margin: 0;
+
+      background-color: $header-bg-colour;
+
+      border: 1px solid transparent;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        fill: $accent-colour;
+      }
+    }
   }
 
-  &__logo {
-    display: block;
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    letter-spacing: 0.02em;
 
-  &__contact {
-    display: flex;
-    margin-left: auto;
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__logo {
+      display: block;
+    }
+
+    &__contact {
+      display: block;
+    }
+
+    &__button {
+      display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+      &__contact {
+        display: flex;
+        margin-left: auto;
+      }
+      font-weight: 500;
+      letter-spacing: 0.02em;
+
+      &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &__logo {
+        display: block;
+        margin-right: 93px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+      }
+
+      &__button {
+        display: none;
+      }
+    }
   }
 }

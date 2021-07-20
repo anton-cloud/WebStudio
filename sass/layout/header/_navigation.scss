@@ -1,4 +1,9 @@
 .nav {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  max-width: 768px;
   display: flex;
 
   &__item {

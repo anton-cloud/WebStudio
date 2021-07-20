@@ -24,7 +24,7 @@
   <body>
     <!-- ----------------------------HEADER --------->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a href="./index.html" class="link header__logo logo logo--colour--black">
           <span class="logo__accent">Web</span>Studio</a
@@ -66,8 +66,70 @@
             </a>
           </li>
         </ul>
+
+        <button type="button" class="header__button">
+          <svg width= '40' height= '40'>
+            <use href="./images/sprite.svg#icon-menu"></use>
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+       <!-- <div class="mobile-menu" data-menu>
+        <button type="button" class="mobile-menu__button" data-menu-close>
+          <svg class="mobile-menu__button-icon" width="40px" height="40px">
+            <use href="./images/svg/sprite.svg#mmclose_btn"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu__list list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link-current" href="./index.html">Студия</a>
+          </li>
+
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-contacts__list list">
+          <li class="mobile-contacts__item">
+            <a href="tel:+380961111111" class="mobile-contact__link link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+
+          <li class="mobile-contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-contact__link link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-social__list list">
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link link">Instagram</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link link">Twitter</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link link">Facebook</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div> -->
+    </header>
     <!------------------------------------ HERO ------------------------->
     <main>
       <section class="hero hero__container">
@@ -740,7 +802,7 @@
           <div class="footer__email email-box">
             <p class="footer__text footer__text--colour--white">Подпишитесь на рассылку</p>
             <form class="email-form">
-              <label>
+              <label class="email-form__label">
                 <input
                   type="text"
                   name="email"
@@ -761,7 +823,7 @@
     </footer>
 
       <!---------------------- Modal------------------ -->
-      <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__btn" data-modal-close>
           <svg width="18" height="18">
@@ -829,7 +891,7 @@
           </div>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
     </main>
   </body>
 </html>

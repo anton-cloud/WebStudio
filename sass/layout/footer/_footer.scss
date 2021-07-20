@@ -20,7 +20,10 @@
   &__text {
     margin-bottom: 20px;
 
-    text-align: center;
+    @media screen and (max-width: 1200px) {
+      text-align: center;
+    }
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
