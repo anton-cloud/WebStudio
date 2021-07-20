@@ -67,24 +67,25 @@
           </li>
         </ul>
 
-        <button type="button" class="header__button">
+
+          <button type="button" class="header__button" data-menu-button>
           <svg width= '40' height= '40'>
             <use href="./images/sprite.svg#icon-menu"></use>
-            <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
       </div>
 
-       <!-- <div class="mobile-menu" data-menu>
+        <div class="backdrop-menu">
+      <div class="mobile-menu" data-menu>
         <button type="button" class="mobile-menu__button" data-menu-close>
           <svg class="mobile-menu__button-icon" width="40px" height="40px">
-            <use href="./images/svg/sprite.svg#mmclose_btn"></use>
+            <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
 
         <ul class="mobile-menu__list list">
           <li class="mobile-menu__item">
-            <a class="mobile-menu__link-current" href="./index.html">Студия</a>
+            <a class="mobile-menu__link-current link" href="./index.html">Студия</a>
           </li>
 
           <li class="mobile-menu__item">
@@ -128,7 +129,8 @@
             <a href="" class="mobile-social__link link">LinkedIn</a>
           </li>
         </ul>
-      </div> -->
+      </div>
+        </div>
     </header>
     <!------------------------------------ HERO ------------------------->
     <main>
@@ -218,12 +220,10 @@
           <h2 class="work__title section-title">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li class="work-list__item">
-              <img
-                src="./images/img-1.jpg"
-                width="370"
-                height="294"
-                alt="Десктопные приложения"
-              />
+<picture>
+        <source srcset="./images/desktop/box1x-min.jpg 2x, ./images/desktop/box1-min.jpg 1x" media="(min-width: 1200px)">
+        <img class="img" src="./images/desktop/box1x-min.jpg" alt="Десктопные приложения">
+       </picture>
               <div class="work-list__box">
                 <p class="work-list__text work-list__text--colour--white">
                   Десктопные приложения
@@ -232,12 +232,10 @@
             </li>
 
             <li class="work-list__item">
-              <img
-                src="./images/img-2.jpg"
-                width="370"
-                height="294"
-                alt="Десктопные приложения"
-              />
+<picture>
+        <source srcset="./images/desktop/box2x-min.jpg 2x, ./images/desktop/box2-min.jpg 1x" media="(min-width: 1200px)">
+        <img class="img" src="./images/desktop/box1x-min.jpg" alt="Десктопные приложения">
+       </picture>
               <div class="work-list__box">
                 <p class="work-list__text work-list__text--colour--white">
                   Мобильные приложения
@@ -246,12 +244,10 @@
             </li>
 
             <li class="work-list__item">
-              <img
-                src="./images/img-3.jpg"
-                width="370"
-                height="294"
-                alt="Десктопные приложения"
-              />
+<picture>
+        <source srcset="./images/desktop/box3x-min.jpg 2x, ./images/desktop/box3-min.jpg 1x" media="(min-width: 1200px)">
+        <img class="img" src="./images/desktop/box1x-min.jpg" alt="Десктопные приложения">
+       </picture>
               <div class="work-list__box">
                 <p class="work-list__text work-list__text--colour--white">
                   Дизайнерские решения
@@ -269,11 +265,12 @@
 
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                src="./images/img-4.jpg"
-                alt="Игорь Демьяненко - член команды"
-                class="person-card__img"
-              />
+<picture class="person-card__img">
+        <source srcset="./images/desktop/team1-2x.jpg 2x, ./images/desktop/team1-1x.jpg 1x" media="(min-width: 1200px)">
+        <source srcset="./images/tablet/team1-2x.jpg, ./images/tablet/team1-1x.jpg 1x" media="(min-width: 768px)">
+        <source srcset="./images/mobile/team1-2x.jpg 2x, ./images/mobile/team1-1x.jpg 1x" media="(min-width: 320px)">
+        <img class="img" src="./images/mobile/team1-1x.jpg" alt="Игорь Демьяненко - член команды">
+       </picture>
               <div class="team__box">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__profession" lang="en">Product Designer</p>
@@ -360,11 +357,13 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/img-5.jpg"
-                alt="Ольга Репина - член команды"
-                class="person-card__img"
-              />
+
+<picture class="person-card__img">
+        <source srcset="./images/desktop/team2-2x.jpg 2x, ./images/desktop/team2-1x.jpg 1x" media="(min-width: 1200px)">
+        <source srcset="./images/tablet/team2-2x.jpg, ./images/tablet/team2-1x.jpg 1x" media="(min-width: 768px)">
+        <source srcset="./images/mobile/team2-2x.jpg 2x, ./images/mobile/team2-1x.jpg 1x" media="(min-width: 320px)">
+        <img class="img" src="./images/mobile/team2-1x.jpg" alt="Ольга Репина - член команды">
+       </picture>
 
               <div class="team__box">
                 <h3 class="team__name">Ольга Репина</h3>
@@ -452,11 +451,12 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/img-6.jpg"
-                alt="Николай Тарасов - член команды"
-                class="person-card__img"
-              />
+<picture class="person-card__img">
+        <source srcset="./images/desktop/team3-2x.jpg 2x, ./images/desktop/team3-1x.jpg 1x" media="(min-width: 1200px)">
+        <source srcset="./images/tablet/team3-2x.jpg, ./images/tablet/team3-1x.jpg 1x" media="(min-width: 768px)">
+        <source srcset="./images/mobile/team3-2x.jpg 2x, ./images/mobile/team3-1x.jpg 1x" media="(min-width: 320px)">
+        <img class="img" src="./images/mobile/team3-1x.jpg" alt="Николай Тарасов - член команды">
+       </picture>
               <div class="team__box">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__profession" lang="en">Marketing</p>
@@ -543,11 +543,12 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/img-7.jpg"
-                alt="Михаил Ермаков - член команды"
-                class="person-card__img"
-              />
+<picture class="person-card__img">
+        <source srcset="./images/desktop/team4-2x.jpg 2x, ./images/desktop/team4-1x.jpg 1x" media="(min-width: 1200px)">
+        <source srcset="./images/tablet/team4-2x.jpg, ./images/tablet/team4-1x.jpg 1x" media="(min-width: 768px)">
+        <source srcset="./images/mobile/team4-2x.jpg 2x, ./images/mobile/team4-1x.jpg 1x" media="(min-width: 320px)">
+        <img class="img" src="./images/mobile/team4-1x.jpg" alt="Михаил Ермаков - член команды">
+       </picture>
               <div class="team__box">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__profession" lang="en">UI Designer</p>
@@ -882,16 +883,19 @@
                   <use href="./images/sprite.svg#icon-check"></use>
                 </svg>
               </span>
-                  Соглашаюсь с рассылкой и принимаю&nbsp;
+              <span>
+                  Соглашаюсь с рассылкой и принимаю
                   <a href=""> Условия договора</a>
+               </span>
             </label>  
 
-        <button type="submit" class="btn btn--bg--blue btn--colour--white hero__btn">Отправить</button>
+        <button type="submit" class="btn btn--bg--blue btn--colour--white hero__btn button__modal">Отправить</button>
                </form>
           </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     </main>
   </body>
 </html>

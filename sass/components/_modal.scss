@@ -9,8 +9,6 @@
   transform: translate(-50%, -50%) scaleX(1);
   transition: transform $transition-duration $transition-timing-function;
 
-  min-width: 528px;
-  min-height: 581px;
   padding: 40px;
 
   background-color: $header-bg-colour;
@@ -49,4 +47,28 @@
 
 .form__checkbox {
   margin-bottom: 30px;
+}
+
+// 320 - 480
+@media screen and (max-width: 480px) {
+  .modal {
+    min-width: 90vw;
+    height: 609px;
+  }
+}
+
+// Tablet 768
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+//Desktop >1200
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 580px;
+  }
 }

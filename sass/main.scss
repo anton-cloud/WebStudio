@@ -1,45 +1,33 @@
 @import "./base/reset";
 @import "./base/variables";
 @import "./base/_common";
-@import './utils/_container';
+@import "./utils/_container";
 @import "./utils/visually-hidden";
 @import "./utils/_link";
-@import './utils/_link-for-pointer';
+@import "./utils/_link-for-pointer";
 @import "./components/section-title";
-@import './components/btn';
-@import './components/logo';
-@import './layout/header/header';
-@import './layout/header/navigation';
-@import './layout/header/_contact';
-@import './layout/hero';
-@import './layout/advantages';
-@import './layout/_work';
-@import './layout/_team';
-@import './components/team-card';
-@import './components/_social-links';
-@import './layout/_clients';
-@import './layout/footer/email-input';
-@import './layout/footer/footer';
-@import './layout/footer/adress';
-@import './layout/footer/contact-footer';
-@import './layout/footer/soc-links-footer';
-@import './pages/examples';
-@import './components/example-card';
-@import './components/backdrop';
-@import './components/modal';
-@import './components/input';
-@import './components/comment-input';
-@import './components/checkbox';
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import "./components/btn";
+@import "./components/logo";
+@import "./layout/header/header";
+@import "./layout/header/navigation";
+@import "./layout/header/_contact";
+@import "./components/mobile-menu";
+@import "./layout/hero";
+@import "./layout/advantages";
+@import "./layout/_work";
+@import "./layout/_team";
+@import "./components/team-card";
+@import "./components/_social-links";
+@import "./layout/_clients";
+@import "./layout/footer/email-input";
+@import "./layout/footer/footer";
+@import "./layout/footer/adress";
+@import "./layout/footer/contact-footer";
+@import "./layout/footer/soc-links-footer";
+@import "./pages/examples";
+@import "./components/example-card";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/input";
+@import "./components/comment-input";
+@import "./components/checkbox";
